@@ -8,42 +8,332 @@ Table of Contents:
         3.3 Support
         3.4 Faq
         3.5 Footer
-////////////////////////////////////////////////////////////////////////*/
+        grijs #899CA0 en donkergroen #1C2B32
+ */
+/*///////////////////////////////////////////////////////////////////////!*!*/
+
+
+
+/*///////////////////////!*    1. Global Styles*!*/
+
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+body {
+    --color1-grey: #899CA0;
+    --color2-green: #1C2B32;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color2-green);
+    margin-bottom: 20px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main section {
+    padding-top: 50px;
+}
+
+main section h2 {
+    margin-bottom: 50px;
+}
+
+/*///////////////////////!*!*/
 
 
 
 /*////////////////////////
-    1. Global Styles
-////////////////////////*/
+/*    2. Typography*/
+/*///////////////////////!*!*/
 
 
 
 /*////////////////////////
-    2. Typography
-////////////////////////*/
+/*    3. Areas*/
+/*///////////////////////!*!*/
 
 
-
-/*////////////////////////
-    3. Areas
-////////////////////////*/
-
-
-
+/**/
 /*///////////// 3.1 Header /////////////*/
+
+header{
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover ;
+    height: 500px;
+}
+
+.sub-title {
+    color: dimgrey;
+    font-size: 10px;
+}
+
+.shop{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.shop h1 {
+    font-weight: 700;
+    font-size: 75px;
+    color: var(--color2-green);
+    margin-bottom: 30px;
+}
+
+
+.search{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    align-self: center;
+    z-index: 10;
+    overflow: hidden;
+    border: 2px solid var(--color2-green);
+    font-size: 11px;
+}
+.search input {
+    width: 200px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: inherit;
+}
+
+.search input::placeholder {
+    color: dimgrey;
+}
+
+.search_padding {
+    padding: 10px 20px;
+}
+
+
+.search button {
+    color: white;
+    background: var(--color2-green);
+    border: none;
+    font-size: inherit;
+}
 
 
 
 /*///////////// 3.2 Testimonial /////////////*/
 
 
+.quote {
+    display: flex;
+    gap: 20px;
+    box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.41);
+    border-radius: 5px;
+    color: dimgrey;
+    padding: 80px 100px;
+    margin-bottom: 50px;
+}
+
+.quote:last-child {
+    margin-bottom: 0;
+}
+
+.quote-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: start;
+}
+
+.quote-person {
+    display: flex;
+}
+
+.quote-person p {
+    align-self: center;
+    font-style: italic;
+}
+
+.quote-person img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.faq img {
+    width: 100%;
+}
+
+
 
 /*///////////// 3.3 Support /////////////*/
 
+.support img {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.support p {
+    color: dimgrey;
+    margin-bottom: 20px;
+}
 
+.support button {
+    background-color: var(--color2-green);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 50px;
+    border: none;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq :not(h2) {
+    color: dimgrey;
+}
 
+.faq details {
+    margin-bottom: 30px;
+}
+
+.faq {
+    margin-bottom: 40px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+footer {
+    background-color: var(--color2-green);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 11px;
+}
+
